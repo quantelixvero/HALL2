@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>International Hall | Developer</title>
+  <script>
+    (function () {
+      try {
+        if (localStorage.getItem("dc-hostel-theme") === "dark") {
+          document.documentElement.classList.add("dark");
+          document.documentElement.dataset.theme = "dark";
+        }
+      } catch (error) {}
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700;800&family=Noto+Serif+Bengali:wght@400;500;600;700&family=Outfit:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body data-page="developer">
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a class="logo" href="index.html" aria-label="International Hall home">
+        <img class="logo-img" src="images/logo.png" alt="International Hall logo" loading="lazy">
+        <span data-i18n="nav.logo">International Hall</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="index.html" data-i18n="nav.home">Home</a>
+        <a href="students.html" data-i18n="nav.students">Students</a>
+        <a href="roommates.html" data-i18n="nav.roommates">Roommates</a>
+        <a href="results.html" data-i18n="nav.results">Results</a>
+        <a href="hostel.html" data-i18n="nav.hostel">Hall Info</a>
+      </nav>
+      <div class="nav-actions">
+        <div class="language-switch" aria-label="Language selector">
+          <button type="button" data-lang-option="en">English</button>
+          <button type="button" data-lang-option="bn">বাংলা</button>
+        </div>
+        <button class="theme-toggle" id="toggle" type="button" aria-label="Toggle dark mode">
+          <span aria-hidden="true">&#9789;</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <section class="page-hero compact">
+      <div class="container" data-aos="fade-up">
+        <p class="eyebrow" data-i18n="nav.developer">Developer</p>
+        <h1 data-i18n="developer.title">Developer Profile</h1>
+        <p data-i18n="developer.subtitle">Student developer, small apps, web projects and contributors.</p>
+      </div>
+    </section>
+
+    <section class="section tinted">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2 data-i18n="developer.contributorTitle">Project contributors</h2>
+          </div>
+        </div>
+        <div class="person-grid">
+          <article class="person-card" data-aos="fade-up" style="background: white; border: 1px solid var(--color-border); padding: 30px; border-radius: 12px; text-align: center; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);">
+            <img src="images/developer.jpg" alt="Developer portrait" loading="lazy" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; margin-bottom: 20px; border: 4px solid var(--color-primary);">
+            <h3 style="font-size: 1.5rem; margin-bottom: 5px;">Abdullah Al Adib</h3>
+            <p style="color: var(--color-primary); font-weight: 600; margin-bottom: 15px;">Lead Developer & Designer</p>
+            <a href="mailto:drseadib@gmail.com" class="btn primary" style="display: inline-block; margin-bottom: 20px; width: 100%;">Email Me</a>
+            <div style="display: flex; flex-direction: column; gap: 10px; align-items: flex-start; text-align: left; background: rgba(0,0,0,0.02); padding: 15px; border-radius: 8px;">
+              <strong style="margin-bottom: 5px;">Projects & Websites:</strong>
+              <a href="https://seadib.blogspot.com/" target="_blank" rel="noopener" style="display: flex; align-items: center; gap: 8px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg> seadib.blogspot.com</a>
+              <a href="https://drsahitto.blogspot.com/" target="_blank" rel="noopener" style="display: flex; align-items: center; gap: 8px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg> drsahitto.blogspot.com</a>
+              <a href="https://seadib.github.io/voice/" target="_blank" rel="noopener" style="display: flex; align-items: center; gap: 8px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg> voice app</a>
+              <a href="https://seadib.github.io/hall/" target="_blank" rel="noopener" style="display: flex; align-items: center; gap: 8px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg> hall website</a>
+            </div>
+          </article>
+
+          <article class="person-card" data-aos="fade-up" data-aos-delay="120" style="background: white; border: 1px solid var(--color-border); padding: 30px; border-radius: 12px; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+            <img src="images/contributor1..jpg" alt="Photographer contributor" loading="lazy" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; margin-bottom: 20px;">
+            <h3 data-i18n="developer.photographer">Photographer</h3>
+            <p data-i18n="developer.photographerText">Supports the project with hall and student event photos.</p>
+          </article>
+
+          <article class="person-card" data-aos="fade-up" data-aos-delay="240" style="background: white; border: 1px solid var(--color-border); padding: 30px; border-radius: 12px; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+            <img src="images/contributor2.jpg" alt="Content contributor" loading="lazy" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; margin-bottom: 20px;">
+            <h3 data-i18n="developer.contentHelper">Content Helper</h3>
+            <p data-i18n="developer.contentHelperText">Helps collect student data, event descriptions and hall updates.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner"></div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

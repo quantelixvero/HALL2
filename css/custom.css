@@ -1,0 +1,20 @@
+/* custom.css */
+body .nav-links a,
+body .more-menu-toggle {
+  font-family: 'Outfit', sans-serif !important;
+}
+
+h1, h2, h3, h4, h5, h6, .eyebrow {
+  font-family: 'Plus Jakarta Sans', sans-serif !important;
+  font-weight: 800 !important;
+}
+
+/* Hide gallery descriptions in the list */
+.gallery-card p {
+  display: none !important;
+}
+
+/* But keep them in the modal preview */
+.gallery-preview-body p {
+  display: block !important;
+}
